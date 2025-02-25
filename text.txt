@@ -1,0 +1,15 @@
+CX/hybris/data/hsqldb/mydb.data
+CX/installer/gradle/wrapper/gradle-8.8.zip
+
+
+git clone https://github.com/Marescow/Cloud_template_test.git
+cd Cloud_template_test/
+git remote set-url origin https://github.com/Marescow/cloud_template_3.git
+
+git remote -v
+
+
+git lfs migrate info --everything --include="CX/installer/gradle/wrapper/gradle-8.8.zip"
+git lfs migrate import --everything --include="CX/installer/gradle/wrapper/gradle-8.8.zip" --verbose
+git lfs ls-files
+git add .gitattributes
