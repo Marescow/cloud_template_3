@@ -9,7 +9,7 @@ git remote set-url origin https://github.com/Marescow/cloud_template_3.git
 git remote -v
 
 
-git lfs migrate info --everything --include="CX/installer/gradle/wrapper/gradle-8.8.zip"
-git lfs migrate import --everything --include="CX/installer/gradle/wrapper/gradle-8.8.zip" --verbose
+git lfs migrate info --everything --include="*.zip"
+git lfs migrate import --everything --include="C*.zip" --verbose
 git lfs ls-files
 git add .gitattributes
